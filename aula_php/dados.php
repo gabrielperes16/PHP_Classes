@@ -1,10 +1,10 @@
 <?php
-    $nome=$_GET["nome"];
-    $ano=$_GET["ano"];
-    $sexo=$_GET["sexo"];
-    $idade=date("Y") - $ano;
-    echo "$nome tem $idade anos de idade"
-    
+ $a=isset($_GET['a'])?$_GET['a']:null;
+ $b=isset($_GET['b'])?$_GET['a']:null;
+ if($a>$b){
+    echo"$a,$b";
+ }
+ else{
+    echo $b,$a;
+ }
 ?>
-<h1><br></h1>
-<a href="form.html">voltar</a>
